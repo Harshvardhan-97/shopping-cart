@@ -1,0 +1,38 @@
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+      <div class="container">
+        <div
+          class="banner_content d-md-flex justify-content-between align-items-center"
+        >
+          <div class="mb-3 mb-md-0">
+            <h2>Contact Us</h2>
+            <p>Very us move be blessed multiply night</p>
+          </div>
+          <div class="page_link">
+            <a routerLink="/">Home</a>
+            <a routerLink="/register">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+      <form class="form-group" [formGroup]="myForm" (ngSubmit)="regUser()">
+          <label>name</label>
+          <input type="text" class="form-control" formControlName="name">
+
+          <label>email</label>
+          <input type="text" class="form-control" formControlName="email">
+
+          <label>Contact</label>
+          <input type="text" class="form-control" formControlName="contact">
+
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="password">
+          <br>
+          <input type="submit"  class="btn btn-success" value="Login">
+
+      </form>
+  </div>
+
